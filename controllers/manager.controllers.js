@@ -35,7 +35,7 @@ module.exports = {
     }
 },
 updateUser: (req, res) => {
-    const error= validationResult(req);
+    const errors= validationResult(req);
     if (!errors.isEmpty()) {
         res.json(errors)
     } else{
